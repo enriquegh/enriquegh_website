@@ -1,10 +1,17 @@
 {
   "name": "enriquegh_website",
   "version": "1.0.0",
-  "description": "Enrique Gonzalez H",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "description": "Enrique Gonzalez — support engineering and people leadership",
+  "engines": {
+    "node": ">=22.22.0"
+  },
   "scripts": {
-    "test": "echo \"No tests\" && exit 0"
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "check": "astro check"
   },
   "repository": {
     "type": "git",
@@ -15,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/enriquegh/enriquegh_website/issues"
   },
-  "homepage": "https://github.com/enriquegh/enriquegh_website#readme"
+  "homepage": "https://github.com/enriquegh/enriquegh_website#readme",
+  "dependencies": {
+    "astro": "^7.4.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
 }
